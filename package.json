@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild index.js --platform=node --target=node20 --bundle --outfile=dist/index.js",
+    "build": "rolldown index.js --platform node --file dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +23,6 @@
     "@actions/github": "^4.0.0"
   },
   "devDependencies": {
-    "esbuild": "^0.25.0"
+    "rolldown": "^1.0.0-beta.3"
   }
 }
