@@ -66685,7 +66685,7 @@ async function checkPullRequestComment(github$1, octokit) {
 	}
 }
 function checkString(str) {
-	var re = new RegExp(`\\b${Object.keys(mapObj).join("\\b|\\b")}\\b`, "gi");
+	var re = new RegExp(`\\b${Object.keys(words).join("\\b|\\b")}\\b`, "gi");
 	return str.replace(re, function(matched) {
 		return words[matched.toLowerCase()];
 	});
